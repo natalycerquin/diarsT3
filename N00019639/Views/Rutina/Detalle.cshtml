@@ -1,0 +1,21 @@
+﻿<h3>Rutina: @Model.Nombre - Nivel: @Model.Tipo</h3>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Ejercicio</th>
+            <th>Link Youtube</th>
+            <th>Duración</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var ejercicio in Model.EjercicioRutinas)
+        {
+            <tr>
+                <td>@ejercicio.Ejercicio.Nombre </td>
+                <td>@ejercicio.Ejercicio.Link </td>
+                <td>@ejercicio.Duracion segundos</td>
+            </tr>
+        }
+    </tbody>
+</table>

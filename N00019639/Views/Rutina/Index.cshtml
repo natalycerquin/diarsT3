@@ -1,0 +1,9 @@
+﻿<h1 class="text-center">Rutinas generadas</h1>
+
+<a href="/Rutina/Registrar" class="btn btn-success">Crear rutina</a>
+
+@foreach (var rutina in Model) { 
+    <div class="my-3">
+        <a href="/Rutina/Detalle/@rutina.Id">@rutina.Nombre</a>
+    </div>
+}
